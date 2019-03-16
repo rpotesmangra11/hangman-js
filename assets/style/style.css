@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:900);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Candal);
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  border-style: dotted;
+  border-width: 5px;
+  height: 500px;
+  -webkit-filter: drop-shadow(2px 2px 20px #009900);
+}
+
+.gameContent {
+  border-left: 5px dotted;
+  height: 490px;
+}
+
+#layout{
+  margin-top: 75px;
+}
+
+.spacing {
+  padding: 10px;
+}
+
+.chrome {
+  text-align: center;
+  /* position: relative; */
+  background-color: black;
+  background-image: -webkit-linear-gradient(
+    #99ff00 0%,
+    #009900 46%,
+    #009933 50%,
+    #000000 54%,
+    #000000 58%,
+    #009900 90%,
+    #009900 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* -webkit-filter: drop-shadow(2px 2px 20px #000000); */
+  -webkit-text-stroke: 4px #ffffff;
+  font-size: 200px;
+  font-family: "Titillium Web", sans-serif;
+  font-style: italic;
+  line-height: 1;
+}
+
+.dreams {
+  /* position: absolute; */
+  margin: 0px;
+  font-family: "Mr Dafoe", cursive;
+  font-size: 80px;
+  color: #00ff33;
+  transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Safari and Chrome */
+  margin-top: -100px;
+  text-align: center;
+  margin-left: 500px;
+  -webkit-text-stroke: 0.25px rgb(0, 0, 0);
+  /* -webkit-filter: drop-shadow(2px 2px 20px #dfc8d9); */
+  -webkit-filter: drop-shadow(2px 2px 20px #8d8b8b);
+  z-index: 20;
+}
+
+.windows .dreams {
+  -webkit-text-stroke: 4px #666666;
+}

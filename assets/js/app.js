@@ -24,6 +24,7 @@ const reset = () => {
 
   //Erase word from last game
   blanksAndSuccesses.splice(0);
+  //Clear the letters used last game
   lettersUsed.splice(0);
   //Get random song
   randSong = songArr[Math.floor(Math.random() * songArr.length)];
@@ -33,11 +34,11 @@ const reset = () => {
     blanksAndSuccesses.push("_");
   }
   //Reset Game Area
-  $(wordToGuess).html(blanksAndSuccesses.join(" "));
+  $("#wordToGuess").html(blanksAndSuccesses.join(" "));
   //Reset Letters Guessed
   guessesLeft = 12;
-  $(numGuesses).html(`Guesses Left: ${guessesLeft}`);
-  $(lettersGuessed).html("Letters Guessed: ");
+  $("#numGuesses").html(`Guesses Left: ${guessesLeft}`);
+  $("#lettersGuessed").html("Letters Guessed: ");
 };
 
 //Check guess right/wrong
@@ -56,13 +57,13 @@ let guessChecker = userGuess => {
     //Remove the letter from the unused letters array
     lettersAlpha.splice(lettersAlpha.indexOf(userGuess), 1);
     //Update board
-    $(wordToGuess).html(blanksAndSuccesses.join(" ").toUpperCase());fdfdfdfsdafdfd
+    $("#wordToGuess").html(blanksAndSuccesses.join(" ").toUpperCase());
     //Update guesses left (numGuesses)
     guessesLeft--;
-    $(numGuesses).html(`Guesses Left: ${guessesLeft}`);
+    $("#numGuesses").html(`Guesses Left: ${guessesLeft}`);
     //Update letters guessed
     lettersUsed.push(userGuess);
-    $(lettersGuessed).html(
+    $("#lettersGuessed").html(
       "Letters Guessed: " + lettersUsed.join(",").toUpperCase()
     );
   } else if (
@@ -73,10 +74,10 @@ let guessChecker = userGuess => {
     lettersAlpha.splice(lettersAlpha.indexOf(userGuess), 1);
     //Update numGuesses
     guessesLeft--;
-    $(numGuesses).html(`Guesses Left: ${guessesLeft}`);
+    $("#numGuesses").html(`Guesses Left: ${guessesLeft}`);
     //Update letters guessed
     lettersUsed.push(userGuess);
-    $(lettersGuessed).html(
+    $("#lettersGuessed").html(
       "Letters Guessed: " + lettersUsed.join(",").toUpperCase()
 		);
   }
@@ -87,15 +88,13 @@ let winCondtion = function() {
   if (blanksAndSuccesses.join("") === randSong) {
     //Update wins
     wins++;
-    $(numWins).html(`Wins: ${wins}`);
-    //Update board
-    $(wordToGuess).html(blanksAndSuccesses.join(" ").toUpperCase());
+    $("#numWins").html(`Wins: ${wins}`);
     alert(`Congrats! You've won. The song was ${randSong.toUpperCase()}.`);
     reset();
   } else if (guessesLeft == 0) {
     //Update losses
 		losses++;
-		$(numLosses).html(`Losses: ${losses}`);
+		$("#numLosses").html(`Losses: ${losses}`);
     alert(`Sorry! You've lost. The song was ${randSong.toUpperCase()}.`);
     //Reset game board
     reset();

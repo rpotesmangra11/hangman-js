@@ -85,3 +85,32 @@ body {
 .windows .dreams {
   -webkit-text-stroke: 4px #666666;
 }
+
+#albumIMG{
+  margin-top: 70px;
+}
+
+#bloqueoIMG{
+  width: 65%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#calienteIMG{
+  /* width: 65%;
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: contain; */
+  object-fit: cover;
+  object-position: 50% 0;
+  width: 335px;
+  height: 337px; 
+}
+
+#imposibleIMG{
+  width: 45%;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

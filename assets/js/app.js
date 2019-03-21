@@ -28,6 +28,7 @@ const reset = () => {
   lettersUsed.splice(0);
   //Get random song
   randSong = songArr[Math.floor(Math.random() * songArr.length)];
+  console.log(randSong);
 
   //Create underscores based on number of letters
   for (let i = 0; i < randSong.length; i++) {
@@ -79,25 +80,68 @@ let guessChecker = userGuess => {
     lettersUsed.push(userGuess);
     $("#lettersGuessed").html(
       "Letters Guessed: " + lettersUsed.join(",").toUpperCase()
-		);
+    );
+  }
+};
+      
+//Display Album Art
+let winImage = function(song) {
+  switch (song) {
+    case "caliente":
+      $("#albumIMG").html('<img id="calienteIMG" src="assets/images/caliente_album_art.jpg" />');
+      break;
+
+    case "imposible":
+      $("#albumIMG").html(
+        '<img id="imposibleIMG" src="assets/images/imposible_album_art.png" />'
+      );
+      break;
+
+    case "bloqueo":
+      $("#albumIMG").html(
+        '<img id="bloqueoIMG" src="assets/images/bloqueo_album_art.jpg" />'
+      );
+      break;
+
+    case "desconocidos":
+      $("#albumIMG").html(
+        '<img src="assets/images/desconocidos_album_art.jpg" />'
+      );
+      break;
+      
+    case "amanece":
+      $("#albumIMG").html(
+        '<img id="bloqueoIMG" src="assets/images/ama.jpg" />'
+      );
   }
 };
 
 //Check win condition
-let winCondtion = function() {
+let winCondition = function() {
   if (blanksAndSuccesses.join("") === randSong) {
     //Update wins
     wins++;
     $("#numWins").html(`Wins: ${wins}`);
-    alert(`Congrats! You've won. The song was ${randSong.toUpperCase()}.`);
-    reset();
+    setTimeout(() =>{
+      winImage(randSong);
+    }, 0);
+    setTimeout(() =>{
+      alert(`Congrats! You've won. The song was ${randSong.toUpperCase()}.`);
+    }, 250);
+    setTimeout(() =>{
+      reset();
+    }, 1000);
+    // alert(`Congrats! You've won. The song was ${randSong.toUpperCase()}.`)
   } else if (guessesLeft == 0) {
     //Update losses
-		losses++;
-		$("#numLosses").html(`Losses: ${losses}`);
-    alert(`Sorry! You've lost. The song was ${randSong.toUpperCase()}.`);
+    losses++;
+    $("#numLosses").html(`Losses: ${losses}`);
+    setTimeout(function() {
+      alert(`Sorry! You've lost. The song was ${randSong.toUpperCase()}.`);
+      reset();
+    }, 0);
+    // alert(`Congrats! You've won. The song was ${randSong.toUpperCase()}.`)
     //Reset game board
-    reset();
   }
 };
 
@@ -105,7 +149,7 @@ let winCondtion = function() {
 $(document).keyup(e => {
   userGuess = e.key;
   guessChecker(userGuess);
-  winCondtion();
+  winCondition();
 });
 
 reset();

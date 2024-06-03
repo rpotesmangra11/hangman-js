@@ -13,3 +13,26 @@ To get a local copy of this project up and running, follow these simple steps:
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/rpotesmangra11/hangman-project.git
+
+## Changelog
+
+### [Unreleased]
+
+### [1.1.0] - 2024-06-02
+
+#### Changes Made
+
+- **Viewport Responsiveness:**
+  - Improved the responsiveness of the application to ensure better usability on various screen sizes.
+
+- **Added Song Names for Non-Spanish Speakers:**
+  - Included song names in the interface to aid non-Spanish speakers in understanding the game content.
+
+- **Fixed Image Reset Issue:**
+  - Resolved an issue where the album image did not reset when starting a new game.
+
+- **Tested Keydown for Press, Keyup Works Better:**
+  - Initially tested using the `keydown` event for key presses, but switched to `keyup` as it prevents multiple guesses when holding down a key.
+
+- **Cleared Album Art on Game Reset:**
+  - Added `$("#albumIMG").html("");` to the reset function to clear the album art when the next game starts.

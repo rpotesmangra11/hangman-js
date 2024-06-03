@@ -14,6 +14,10 @@ To get a local copy of this project up and running, follow these simple steps:
    ```bash
    git clone https://github.com/rpotesmangra11/hangman-project.git
 
+ ## Github pages  
+ 
+You can find the game hosted on GitHub Pages here: https://rpotesmangra11.github.io/hangman_js/
+
 ## Changelog
 
 ### [Unreleased]

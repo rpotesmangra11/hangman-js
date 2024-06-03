@@ -41,6 +41,6 @@ You can find the game hosted on GitHub Pages here: https://rpotesmangra11.github
 - **Cleared Album Art on Game Reset:**
   - Added `$("#albumIMG").html("");` to the reset function to clear the album art when the next game starts.
 
- ## Features I would like to be added in the future
+ ## Planned Future Enhancements
 
- -Play song when user guesses the song name correctly
+ -Play song when user guesses the song name correctly (ETA undetermined)

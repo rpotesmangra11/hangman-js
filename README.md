@@ -18,6 +18,33 @@ To get a local copy of this project up and running, follow these simple steps:
  
 You can find the game hosted on GitHub Pages here: https://rpotesmangra11.github.io/hangman_js/
 
+## How to Play Hangman
+
+Hangman is a classic word-guessing game where players try to guess a hidden word one letter at a time. Here are the rules of the game:
+
+1. **Objective:**
+   - The objective of the game is to guess the hidden word before you run out of guesses.
+
+2. **Gameplay:**
+   - At the start of the game, a Reggaeton song name is selected at random, and its letters are represented by blank spaces.
+   - Players guess letters one at a time.
+   - If a guessed letter is in the word, it is revealed in the correct position(s).
+   - If a guessed letter is not in the word, a part of the hangman is drawn.
+
+3. **Winning the Game:**
+   - The game is won if the player correctly guesses all the letters in the song name before the hangman drawing is completed.
+
+4. **Losing the Game:**
+   - The game is lost if the player makes too many incorrect guesses.
+
+5. **Strategy Tips:**
+   - Start by guessing common vowels (e.g., 'A', 'E', 'I', 'O', 'U').
+   - Next, guess common consonants (e.g., 'R', 'S', 'T', 'L', 'N').
+   - Use the revealed letters to narrow down possible word options.
+
+Enjoy the game!
+
+
 ## Changelog
 
 ### [Unreleased]

@@ -40,6 +40,8 @@ const reset = () => {
   guessesLeft = 12;
   $("#numGuesses").html(`Guesses Left: ${guessesLeft}`);
   $("#lettersGuessed").html("Letters Guessed: ");
+  //Reset Album Art
+  $("#albumIMG").html("");
 };
 
 //Check guess right/wrong

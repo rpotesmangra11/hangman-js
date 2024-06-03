@@ -114,3 +114,19 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.2em;
+  }
+
+  .container {
+      width: 95%;
+      padding: 5px;
+  }
+
+  button, input {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+} 

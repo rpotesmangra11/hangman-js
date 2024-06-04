@@ -2,6 +2,10 @@
 
 This Hangman project was developed as part of my coursework at the University of Minnesota Coding Bootcamp. It stands out as one of the most enjoyable and engaging projects I have worked on. I take great pride in this project and regularly revisit it to incorporate enhancements and updates as my coding skills and knowledge evolve. This continuous improvement approach allows me to refine the functionality, optimize the performance, and implement new features, ensuring that the project grows alongside my knowledge as a programmer.
 
+## Deployment:
+https://rpotesmangra11.github.io/hangman-js/
+
+
 ## Introduction
 
 Hangman is a classic word-guessing game where players try to guess the hidden word one letter at a time. This project was created bootcamp requirement and showcases my ability to build interactive web applications using JavaScript, HTML, and CSS.

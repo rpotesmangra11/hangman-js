@@ -49,7 +49,7 @@ Enjoy the game!
 
 ## Changelog
 
-### [Unreleased]
+### [Latest Release]
 
 ### [1.1.0] - 2024-06-02
 

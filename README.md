@@ -5,6 +5,8 @@ This Hangman project was developed as part of my coursework at the University of
 ## Github Pages Deployment:
 https://rpotesmangra11.github.io/hangman-js/
 
+## Find JavaScript here:
+https://github.com/rpotesmangra11/hangman-js/blob/master/assets/js/app.js
 
 ## Introduction
 

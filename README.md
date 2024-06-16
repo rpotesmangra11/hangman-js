@@ -72,5 +72,5 @@ Enjoy the game!
 
  ## Planned Future Enhancements
 
- -Play song when user guesses the song name correctly (ETA undetermined)
+ -Play song when user guesses the song name correctly (ETA undetermined)  
  -I would like to have an actual hangman character or something revealed with every failed guess (ETA undetermined)

@@ -1,6 +1,6 @@
 # Hangman Project
 
-This Hangman project was developed as part of my coursework at the University of Minnesota Coding Bootcamp. It stands out as one of the most enjoyable and engaging projects I have worked on. I take great pride in this project and regularly revisit it to incorporate enhancements and updates as my coding skills and knowledge evolve. This continuous improvement approach allows me to refine the functionality, optimize the performance, and implement new features, ensuring that the project grows alongside my knowledge as a programmer.
+This Hangman project was developed as part of my coursework at the University of Minnesota Coding Bootcamp (2018). It stands out as one of the most enjoyable and engaging projects I have worked on. I take great pride in this project and regularly revisit it to incorporate enhancements and updates as my coding skills and knowledge evolve. This continuous improvement approach allows me to refine the functionality, optimize the performance, and implement new features, ensuring that the project grows alongside my knowledge as a programmer.
 
 ## Github Pages Deployment:
 https://rpotesmangra11.github.io/hangman-js/
